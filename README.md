@@ -1,4 +1,4 @@
 ## shared
-- #script :
-- #python
-- #note
+- script :
+- python
+- note
