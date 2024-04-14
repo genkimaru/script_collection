@@ -1,4 +1,6 @@
 #!/bin/bash
+
+# generate all table schemas in hive 
 beeline --showHeader=false --silent=true --outputformat=csv2 -u "jdbc:hive2://hive2.cioprd.local:10001/default;transportMode=http;httpPath=cliservice;principal=hive/hive2.cioprd.local@CIOPRD.LOCAL" -e " show databases;!exit ;" > databases
 
 for database in `cat databases`
